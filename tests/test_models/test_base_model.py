@@ -6,8 +6,8 @@ import unittest
 from models.base_model import BaseModel
 
 
-class test_base_model(unittest.TestCase):
-    """Class Test Base
+class TestBaseModel(unittest.TestCase):
+    """Class Test Base Model
     """
 
     def test_base_model(self):
