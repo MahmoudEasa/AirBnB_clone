@@ -13,11 +13,7 @@ class BaseModel:
         Attributes:
             id (str): assign with an uuid when an instance is created
             created_at (datetime): assign with the current datetime
-                                    when an instance is created
             updated_at (datetime): assign with the current datetime
-                                    when an instance is created and
-                                    it will be updated every time
-                                    you change your object
     """
 
     def __init__(self, *args, **kwargs):
@@ -58,7 +54,7 @@ class BaseModel:
         storage.save()
 
     def to_dict(self):
-        """Returns a dictionary containing all
+        """Returns a dictionary containing all models/base_model.py
             keys/values of __dict__ of the instance
         """
 
@@ -68,3 +64,4 @@ class BaseModel:
         dict_copy['__class__'] = self.__class__.__name__
 
         return (dict_copy)
+
