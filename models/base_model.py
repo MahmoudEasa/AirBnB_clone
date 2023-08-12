@@ -19,8 +19,15 @@ class BaseModel:
                                     it will be updated every time
                                     you change your object
     """
+
     def __init__(self, *args, **kwargs):
-        """Function Init"""
+        """Function Init
+
+            Args:
+                *args: list of arguments
+                **kwargs: dict of keys and values arguments
+        """
+
         if kwargs:
             for key, val in kwargs.items():
                 if key in ["created_at", "updated_at"]:
@@ -37,14 +44,16 @@ class BaseModel:
             storage.new(self)
 
     def __str__(self):
-        """Print: [<class name>] (<self.id>) <self.__dict__>
+        """Return: [<class name>] (<self.id>) <self.__dict__>
         """
+
         return (f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}")
 
     def save(self):
         """Updates the public instance attribute updated_at
             with the current datetime
         """
+
         self.updated_at = datetime.now()
         storage.save()
 
@@ -52,6 +61,7 @@ class BaseModel:
         """Returns a dictionary containing all
             keys/values of __dict__ of the instance
         """
+
         dict_copy = self.__dict__.copy()
         dict_copy['created_at'] = self.created_at.isoformat()
         dict_copy['updated_at'] = self.updated_at.isoformat()
