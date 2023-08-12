@@ -20,6 +20,7 @@ class BaseModel:
                                     you change your object
     """
     def __init__(self, *args, **kwargs):
+        """Function Init"""
         if kwargs:
             for key, val in kwargs.items():
                 if key in ["created_at", "updated_at"]:
@@ -36,6 +37,8 @@ class BaseModel:
             storage.new(self)
 
     def __str__(self):
+        """Print: [<class name>] (<self.id>) <self.__dict__>
+        """
         return (f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}")
 
     def save(self):
