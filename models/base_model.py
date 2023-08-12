@@ -10,17 +10,7 @@ from models import storage
 
 
 class BaseModel:
-    """Class Base Model
-
-        Attributes:
-            id (str): assign with an uuid when an instance is created
-            created_at (datetime): assign with the current datetime
-                                    when an instance is created
-            updated_at (datetime): assign with the current datetime
-                                    when an instance is created and
-                                    it will be updated every time
-                                    you change your object
-    """
+    """Class Base Model"""
 
     def __init__(self, *args, **kwargs):
         """Function Init
