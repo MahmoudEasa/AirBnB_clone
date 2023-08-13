@@ -15,7 +15,7 @@ class TestUser(unittest.TestCase):
         """
         my_model = User()
         my_model.email = "user@email.com"
-        my_model.password = 123
+        my_model.password = "123"
         my_model.first_name = "user1"
         my_model.last_name = "user2"
 
@@ -23,6 +23,16 @@ class TestUser(unittest.TestCase):
         self.assertTrue(hasattr(my_model, "password"))
         self.assertTrue(hasattr(my_model, "first_name"))
         self.assertTrue(hasattr(my_model, "last_name"))
+
+        self.assertEqual(type(my_model.email), str)
+        self.assertEqual(type(my_model.password), str)
+        self.assertEqual(type(my_model.first_name), str)
+        self.assertEqual(type(my_model.last_name), str)
+
+        self.assertEqual(my_model.email, "user@email.com")
+        self.assertEqual(my_model.password, "123")
+        self.assertEqual(my_model.first_name, "user1")
+        self.assertEqual(my_model.last_name, "user2")
 
         self.assertTrue(hasattr(my_model, "id"))
         self.assertTrue(hasattr(my_model, "created_at"))
