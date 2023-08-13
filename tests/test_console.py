@@ -18,4 +18,4 @@ class TestConsole(unittest.TestCase):
     def test_emptyline(self):
         """Test emptyline
         """
-        HBNBCommand.emptyline()
+        HBNBCommand.emptyline(self)
