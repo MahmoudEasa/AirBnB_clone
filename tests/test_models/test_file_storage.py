@@ -15,11 +15,25 @@ class TestFileStorage(unittest.TestCase):
         """Set up for the tests"""
         self.fs = FileStorage()
 
-    def test_attributes(self):
+    def test_all(self):
         """Function to test FileStorage
         """
         obj = self.fs.all()
         self.assertEqual(type(obj), dict)
+
+    def test_new(self):
+        """Test new"""
+
+        pass
+
+    def test_save(self):
+        """Test save"""
+
+        pass
+
+    def test_reload(self):
+        """ Test reload"""
+        pass
 
 
 if __name__ == '__main__':
