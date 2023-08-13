@@ -22,6 +22,8 @@ class TestBaseModel(unittest.TestCase):
         self.assertTrue(hasattr(my_model, "id"))
         self.assertTrue(hasattr(my_model, "created_at"))
         self.assertTrue(hasattr(my_model, "updated_at"))
+        self.assertTrue(my_model.name == "My First Model")
+        self.assertTrue(my_model.my_number == 89)
 
         my_model_json = my_model.to_dict()
 
@@ -34,6 +36,8 @@ class TestBaseModel(unittest.TestCase):
         self.assertTrue(hasattr(my_new_model, "id"))
         self.assertTrue(hasattr(my_new_model, "created_at"))
         self.assertTrue(hasattr(my_new_model, "updated_at"))
+        self.assertTrue(my_new_model.name == "My First Model")
+        self.assertTrue(my_new_model.my_number == 89)
         self.assertFalse(my_new_model is my_model)
 
 
