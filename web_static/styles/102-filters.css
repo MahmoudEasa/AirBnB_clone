@@ -87,13 +87,6 @@ li {
 	visibility: visible;
 }
 
-.filters .locations .popover_list,
-.filters .amenities .popover_list {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-}
-
 .filters .locations .popover h2,
 .filters .amenities .popover h2 {
 	margin: 20px 0 0;
@@ -102,4 +95,87 @@ li {
 .filters .locations .popover li,
 .filters .amenities .popover li {
 	margin: 10px 0 0 20px;
+}
+
+/* Responsive design */
+@media (max-width: 800px) {
+	.filters .locations .popover,
+	.filters .amenities .popover {
+		padding: 10px 5px 20px;
+	}
+
+	.filters .locations .popover li,
+	.filters .amenities .popover li {
+		margin: 10px 0 0 10px;
+	}
+
+	.filters .locations .popover h2,
+	.filters .amenities .popover h2 {
+		margin: 20px 0 0;
+	}
+}
+
+@media (max-width: 350px) {
+	.filters {
+		position: relative;
+		margin-top: 50px;
+	}
+
+	.filters button {
+		font-size: 14px;
+		width: 100%;
+		height: 30px;
+		position: absolute;
+		top: -35px;
+		left: 0;
+	}
+
+	.filters {
+		flex-direction: column;
+	}
+
+	.filters .locations,
+	.filters .amenities {
+		width: 50%;
+	}
+
+	.filters .locations h3,
+	.filters .amenities h3,
+	.filters .locations h4,
+	.filters .amenities h4 {
+		margin-left: 10px;
+	}
+}
+
+@media (max-width: 600px) {
+	.filters button {
+		font-size: 14px;
+		margin-right: 5px;
+	}
+
+	.filters .locations,
+	.filters .amenities {
+		width: 50%;
+	}
+
+	.filters .locations h3,
+	.filters .amenities h3,
+	.filters .locations h4,
+	.filters .amenities h4 {
+		margin-left: 10px;
+	}
+}
+
+@media (min-width: 510px) and (max-width: 800px) {
+	.filters .locations,
+	.filters .amenities {
+		width: 35%;
+	}
+
+	.filters .locations h3,
+	.filters .amenities h3,
+	.filters .locations h4,
+	.filters .amenities h4 {
+		margin-left: 15px;
+	}
 }
