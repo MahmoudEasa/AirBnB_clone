@@ -1,198 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>AirBnb Clone</title>
-		<link rel="icon" href="images/icon.png" type="image/png">
-		<link rel="stylesheet" href="styles/4-common.css">
-		<link rel="stylesheet" href="styles/3-header.css">
-		<link rel="stylesheet" href="styles/3-footer.css">
-		<link rel="stylesheet" href="styles/6-filters.css">
-		<link rel="stylesheet" href="styles/100-places.css">
-	</head>
 
-	<body>
-		<header>
-			<div class="logo"></div>
-		</header>
-		<div class="container">
-			<section class="filters">
-				<div class="dropdowns">
-					<div class="locations">
-						<h3>States</h3>
-						<h4>California, Arizona...</h4>
-						<ul class="popover">
-							<li><h2>Arizona:</h2></li>
-							<li>
-								<ul class="popover_list">
-									<li>Page</li>
-									<li>Page2</li>
-								</ul>
-							</li>
-							<li><h2>California:</h2></li>
-							<li>
-								<ul class="popover_list">
-									<li>San Francisco</li>
-									<li>Los Altos</li>
-								</ul>
-							</li>
-						</ul>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AirBnb Clone</title>
+	<link rel="icon" href="images/icon.png" type="image/png">
+	<link rel="stylesheet" href="styles/4-common.css">
+	<link rel="stylesheet" href="styles/3-header.css">
+	<link rel="stylesheet" href="styles/3-footer.css">
+	<link rel="stylesheet" href="styles/6-filters.css">
+	<link rel="stylesheet" href="styles/100-places.css">
+</head>
+
+<body>
+	<header>
+		<div class="logo"></div>
+	</header>
+	<div class="container">
+		<section class="filters">
+			<div class="dropdowns">
+				<div class="locations">
+					<h3>States</h3>
+					<h4>California, Arizona...</h4>
+					<ul class="popover">
+						<li>
+							<h2>Arizona:</h2>
+						</li>
+						<li>
+							<ul class="popover_list">
+								<li>Page</li>
+								<li>Page2</li>
+							</ul>
+						</li>
+						<li>
+							<h2>California:</h2>
+						</li>
+						<li>
+							<ul class="popover_list">
+								<li>San Francisco</li>
+								<li>Los Altos</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="amenities">
+					<h3>Amenities</h3>
+					<h4>Internet, Kitchen...</h4>
+					<ul class="popover">
+						<li>Internet</li>
+						<li>TV</li>
+						<li>Kitchen</li>
+						<li>Iron</li>
+					</ul>
+				</div>
+			</div>
+			<button type="button">Search</button>
+		</section>
+		<section class="places">
+			<h1>Places</h1>
+			<div class="articles">
+				<article>
+					<h2>My home</h2>
+					<div class="price_by_night">$80</div>
+					<div class="information">
+						<div class="max_guest">2 Guests</div>
+						<div class="number_rooms">1 Bedroom</div>
+						<div class="number_bathrooms">1 Bathroom</div>
+					</div>
+					<div class="user"><span>Owner:</span> Mahmoud Easa</div>
+					<div class="description">
+						Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Sunt sequi ipsam officiis, minus vero beatae
+						vel voluptatum quam molestiae
 					</div>
 					<div class="amenities">
-						<h3>Amenities</h3>
-						<h4>Internet, Kitchen...</h4>
-						<ul class="popover">
-							<li>Internet</li>
-							<li>TV</li>
-							<li>Kitchen</li>
-							<li>Iron</li>
+						<h2>Amenities</h2>
+						<ul>
+							<li class="tv">TV</li>
+							<li class="wifi">WiFi</li>
+							<li class="pets">Pets friendly</li>
 						</ul>
 					</div>
-				</div>
-				<button type="button">Search</button>
-			</section>
-			<section class="places">
-				<h1>Places</h1>
-				<div class="articles">
-					<article>
-						<h2>My home</h2>
-						<div class="price_by_night">$80</div>
-						<div class="information">
-							<div class="max_guest">2 Guests</div>
-							<div class="number_rooms">1 Bedroom</div>
-							<div class="number_bathrooms">1 Bathroom</div>
-						</div>
-						<div class="user"><span>Owner:</span> Mahmoud Easa</div>
-						<div class="description">
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Sunt sequi ipsam officiis, minus vero beatae
-							vel voluptatum quam molestiae
-						</div>
-						<div class="amenities">
-							<h2>Amenities</h2>
-							<ul>
-								<li class="tv">TV</li>
-								<li class="wifi">WiFi</li>
-								<li class="pets">Pets friendly</li>
-							</ul>
-						</div>
-						<div class="reviews">
-							<h2>2 Reviews</h2>
-							<ul>
-								<li>
-									<h3>
-										From Bob Dylan the 27th January 2017
-									</h3>
-									<p>
-										Runshi is an epic host. Nothing more I
-										can say. 5 star!
-									</p>
-								</li>
-								<li>
-									<h3>From Connor the 4th January 2023</h3>
-									<p>Highly recommended!</p>
-								</li>
-							</ul>
-						</div>
-					</article>
-					<article>
-						<h2>Tiny house</h2>
-						<div class="price_by_night">$190</div>
-						<div class="information">
-							<div class="max_guest">4 Guests</div>
-							<div class="number_rooms">2 Bedroom</div>
-							<div class="number_bathrooms">1 Bathroom</div>
-						</div>
-						<div class="user"><span>Owner:</span> Adrienne</div>
-						<div class="description">
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Sunt sequi ipsam officiis, minus vero beatae
-							vel voluptatum quam molestiae, cumque quibusdam
-							dolore veniam assumenda ipsum necessitatibus. Hic in
-							veritatis doloremque? Lorem ipsum dolor sit amet
-							consectetur adipisicing elit. Sunt sequi ipsam
-							officiis, minus vero beatae
-						</div>
-						<div class="amenities">
-							<h2>Amenities</h2>
-							<ul>
-								<li class="pets">Pets friendly</li>
-							</ul>
-						</div>
-						<div class="reviews">
-							<h2>1 Review</h2>
-							<ul>
-								<li>
-									<h3>From Max the 27th January 2017</h3>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur
-										adipisicing elit. Dicta corporis quod
-										repudiandae sit facilis hic ducimus
-										quisquam quas tempora, doloribus nam
-										libero, delectus at cum commodi est odio
-										animi quis.
-									</p>
-								</li>
-							</ul>
-						</div>
-					</article>
-					<article>
-						<h2>A suite</h2>
-						<div class="price_by_night">$1000</div>
-						<div class="information">
-							<div class="max_guest">11 Guests</div>
-							<div class="number_rooms">10 Bedroom</div>
-							<div class="number_bathrooms">5 Bathroom</div>
-						</div>
-						<div class="user"><span>Owner:</span> John Lennon</div>
-						<div class="description">
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Sunt sequi ipsam officiis, minus vero beatae
-							vel voluptatum quam molestiae, cumque quibusdam
-							dolore veniam assumenda ipsum necessitatibus. Hic in
-							veritatis doloremque?
-						</div>
-						<div class="amenities">
-							<h2>Amenities</h2>
-							<ul>
-								<li class="tv">TV</li>
-								<li class="wifi">WiFi</li>
-							</ul>
-						</div>
-						<div class="reviews">
-							<h2>3 Reviews</h2>
-							<ul>
-								<li>
-									<h3>
-										From Bob Dylan the 27th January 2017
-									</h3>
-									<p>
-										Lorem ipsum dolor sit amet consectetur,
-										adipisicing elit. Sint reiciendis
-										impedit iure modi natus obcaecati
-										dolores eveniet ipsum provident culpa!
-										Minus ipsum voluptatibus hic et velit
-										reiciendis dicta! Laboriosam, dolor!
-									</p>
-								</li>
-								<li>
-									<h3>From Connor the 4th January 2023</h3>
-									<p>Highly recommended!</p>
-								</li>
-								<li>
-									<h3>From Connor the 4th January 2023</h3>
-									<p>
-										Lorem ipsum dolor, sit amet consectetur
-										adipisicing elit. Quaerat hic voluptates
-										perferendis ab tempore quisquam ducimus
-									</p>
-								</li>
-							</ul>
-						</div>
-					</article>
-				</div>
-			</section>
-		</div>
-		<footer>Best School</footer>
-	</body>
-</html>
+					<div class="reviews">
+						<h2>2 Reviews</h2>
+						<ul>
+							<li>
+								<h3>
+									From Bob Dylan the 27th January 2017
+								</h3>
+								<p>
+									Runshi is an epic host. Nothing more I
+									can say. 5 star!
+								</p>
+							</li>
+							<li>
+								<h3>From Connor the 4th January 2023</h3>
+								<p>Highly recommended!</p>
+							</li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<h2>Tiny house</h2>
+					<div class="price_by_night">$190</div>
+					<div class="information">
+						<div class="max_guest">4 Guests</div>
+						<div class="number_rooms">2 Bedroom</div>
+						<div class="number_bathrooms">1 Bathroom</div>
+					</div>
+					<div class="user"><span>Owner:</span> Adrienne</div>
+					<div class="description">
+						Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Sunt sequi ipsam officiis, minus vero beatae
+						vel voluptatum quam molestiae, cumque quibusdam
+						dolore veniam assumenda ipsum necessitatibus. Hic in
+						veritatis doloremque? Lorem ipsum dolor sit amet
+						consectetur adipisicing elit. Sunt sequi ipsam
+						officiis, minus vero beatae
+					</div>
+					<div class="amenities">
+						<h2>Amenities</h2>
+						<ul>
+							<li class="pets">Pets friendly</li>
+						</ul>
+					</div>
+					<div class="reviews">
+						<h2>1 Review</h2>
+						<ul>
+							<li>
+								<h3>From Max the 27th January 2017</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur
+									adipisicing elit. Dicta corporis quod
+									repudiandae sit facilis hic ducimus
+									quisquam quas tempora, doloribus nam
+									libero, delectus at cum commodi est odio
+									animi quis.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<h2>A suite</h2>
+					<div class="price_by_night">$1000</div>
+					<div class="information">
+						<div class="max_guest">11 Guests</div>
+						<div class="number_rooms">10 Bedroom</div>
+						<div class="number_bathrooms">5 Bathroom</div>
+					</div>
+					<div class="user"><span>Owner:</span> John Lennon</div>
+					<div class="description">
+						Lorem ipsum dolor sit amet consectetur adipisicing
+						elit. Sunt sequi ipsam officiis, minus vero beatae
+						vel voluptatum quam molestiae, cumque quibusdam
+						dolore veniam assumenda ipsum necessitatibus. Hic in
+						veritatis doloremque?
+					</div>
+					<div class="amenities">
+						<h2>Amenities</h2>
+						<ul>
+							<li class="tv">TV</li>
+							<li class="wifi">WiFi</li>
+						</ul>
+					</div>
+					<div class="reviews">
+						<h2>3 Reviews</h2>
+						<ul>
+							<li>
+								<h3>
+									From Bob Dylan the 27th January 2017
+								</h3>
+								<p>
+									Lorem ipsum dolor sit amet consectetur,
+									adipisicing elit. Sint reiciendis
+									impedit iure modi natus obcaecati
+									dolores eveniet ipsum provident culpa!
+									Minus ipsum voluptatibus hic et velit
+									reiciendis dicta! Laboriosam, dolor!
+								</p>
+							</li>
+							<li>
+								<h3>From Connor the 4th January 2023</h3>
+								<p>Highly recommended!</p>
+							</li>
+							<li>
+								<h3>From Connor the 4th January 2023</h3>
+								<p>
+									Lorem ipsum dolor, sit amet consectetur
+									adipisicing elit. Quaerat hic voluptates
+									perferendis ab tempore quisquam ducimus
+								</p>
+							</li>
+						</ul>
+					</div>
+				</article>
+			</div>
+		</section>
+	</div>
+	<footer>Best School</footer>
+</body>
 
+</html>
